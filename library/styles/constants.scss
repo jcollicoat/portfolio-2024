@@ -1,0 +1,19 @@
+// Constants
+
+$transition-speed: 0.15s;
+$transition-speed-slow: calc($transition-speed * 2);
+$transition: $transition-speed ease-in-out;
+$transition-slow: $transition-speed-slow ease-in-out;
+
+// Mixins
+
+@mixin focus-outline {
+    outline: 1px dashed transparent;
+    outline-offset: 2px;
+    transition: $transition;
+    transition-property: outline-color;
+
+    &:focus-visible {
+        outline-color: currentColor;
+    }
+}
