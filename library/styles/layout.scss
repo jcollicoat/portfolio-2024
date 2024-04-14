@@ -13,6 +13,9 @@ body {
         Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
         'Segoe UI Symbol';
     font-size: calc(1rem / 16 * 13);
+
+    background: #000000;
+    min-height: 2000px;
 }
 
 header,
@@ -21,14 +24,21 @@ main {
     max-width: 1836px;
 }
 
+a,
+button {
+    color: inherit;
+}
+
 a {
     @include focus-outline;
 
     text-decoration: none;
+}
 
-    &:hover {
-        text-decoration: underline;
-    }
+button {
+    background: none;
+    border: none;
+    padding: 0;
 }
 
 h1,

@@ -1,5 +1,9 @@
 // Constants
 
+$padding-s: 0.5rem;
+$padding-m: 1rem;
+$padding-l: 1.5rem;
+
 $transition-speed: 0.15s;
 $transition-speed-slow: calc($transition-speed * 2);
 $transition: $transition-speed ease-in-out;

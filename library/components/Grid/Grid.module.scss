@@ -1,0 +1,30 @@
+@import '@styles/constants.scss';
+
+.grid {
+    display: grid;
+    grid-column-gap: 0.5rem;
+    grid-template-columns: repeat(24, 1fr);
+    margin: 0 auto;
+    max-width: 1600px;
+    padding: 0 $padding-m;
+    width: 100%;
+
+    &.isRelative {
+        position: relative;
+    }
+
+    &.overflowLeft,
+    &.overflowRight {
+        max-width: calc(100% - ((100% - 1600px) / 2));
+    }
+
+    &.overflowLeft {
+        margin-left: 0;
+        padding-left: 0;
+    }
+
+    &.overflowRight {
+        margin-right: 0;
+        padding-right: 0;
+    }
+}
