@@ -1,1 +1,39 @@
 @import '@styles/constants.scss';
+
+.section {
+    margin: 0 0 10rem 0;
+
+    .joseph {
+        grid-column: 1 / -1;
+
+        @media (min-width: $breakpoint-m) {
+            grid-column: 1 / 13;
+            grid-row: 1 / 3;
+        }
+
+        @media (min-width: $breakpoint-l) {
+            grid-column: 3 / 13;
+        }
+
+        @media (min-width: $breakpoint-xl) {
+            grid-column: 4 / 13;
+        }
+    }
+
+    .collicoat {
+        grid-column: 1 / -1;
+
+        @media (min-width: $breakpoint-m) {
+            grid-column: 13 / -1;
+            grid-row: 2 / 5;
+        }
+
+        @media (min-width: $breakpoint-l) {
+            grid-column: 13 / -3;
+        }
+
+        @media (min-width: $breakpoint-xl) {
+            grid-column: 13 / -4;
+        }
+    }
+}

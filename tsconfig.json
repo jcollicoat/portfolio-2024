@@ -23,6 +23,7 @@
         "paths": {
             "@components/*": ["library/components/*"],
             "@cms/*": ["library/sanity/*"],
+            "@lotties/*": ["library/lotties/*"],
             "@styles/*": ["library/styles/*"]
         }
     },
