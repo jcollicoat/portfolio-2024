@@ -3,7 +3,7 @@ import '@styles/layout.scss';
 
 export const metadata: Metadata = {
     title: 'Joseph Collicoat',
-    description: 'Welcome to my portfolio',
+    description: 'Welcome to my portfolio, created with NextJS and Sanity CMS!',
 };
 
 export default function RootLayout({
