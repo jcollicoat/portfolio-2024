@@ -13,7 +13,7 @@ interface PageContent {
     _type: 'about_me' | 'articles' | 'hero_home' | 'hero_page' | 'projects';
 }
 
-export interface Page {
+export type Page = {
     meta_title: string;
     meta_description: string;
     meta_image: string;
@@ -23,8 +23,4 @@ export interface Page {
     custom_theme?: CustomTheme;
 
     content: PageContent[];
-}
-
-export interface PageType {
-    page: Page | null;
-}
+} | null;
