@@ -3,13 +3,13 @@
     --padding-m: 1rem;
     --padding-l: 1.5rem;
 
-    @media (min-width: 400px) {
+    @media (min-width: $breakpoint-s) {
         --padding-s: 1rem;
         --padding-m: 2rem;
         --padding-l: 3rem;
     }
 
-    @media (min-width: 1200px) {
+    @media (min-width: $breakpoint-l) {
         --padding-s: 2rem;
         --padding-m: 3rem;
         --padding-l: 4rem;

@@ -9,6 +9,8 @@
 }
 
 body {
+    background-color: #000000;
+    color: #ffffff;
     font-family:
         'Inter',
         -apple-system,
@@ -22,9 +24,7 @@ body {
         'Segoe UI Emoji',
         'Segoe UI Symbol';
     font-size: calc(1rem / 16 * 13);
-
-    background: #000000;
-    min-height: 2000px;
+    min-height: 100vh;
 }
 
 header,
@@ -55,10 +55,8 @@ h2,
 h3,
 h4,
 h5,
-h6 {
-    margin: 0;
-}
-
+h6,
 p {
+    line-height: 1;
     margin: 0;
 }

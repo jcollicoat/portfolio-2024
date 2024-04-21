@@ -19,7 +19,7 @@
         width: 3rem;
         z-index: 101;
 
-        @media (min-width: 800px) {
+        @media (min-width: $breakpoint-m) {
             grid-column: 2 / 3;
         }
     }
@@ -33,7 +33,7 @@
         width: 2rem;
         z-index: 101;
 
-        @media (min-width: 800px) {
+        @media (min-width: $breakpoint-m) {
             display: none;
         }
     }
@@ -56,7 +56,7 @@
         transition: $transition opacity;
         width: 100%;
 
-        @media (min-width: 800px) {
+        @media (min-width: $breakpoint-m) {
             align-self: center;
             background: none;
             flex-direction: row;
@@ -93,14 +93,14 @@
             animation-delay: 0.5s;
             margin: var(--padding-l) 0;
 
-            @media (min-width: 800px) {
+            @media (min-width: $breakpoint-m) {
                 margin: 0 0 0 var(--padding-l);
             }
 
             a {
                 position: relative;
 
-                @media (min-width: 800px) {
+                @media (min-width: $breakpoint-m) {
                     &::after {
                         background-color: currentColor;
                         content: '';

@@ -5,6 +5,10 @@
 
 // Constants
 
+$breakpoint-s: 400px;
+$breakpoint-m: 800px;
+$breakpoint-l: 1200px;
+
 $transition-speed: 0.15s;
 $transition-speed-slow: calc($transition-speed * 2);
 $transition: $transition-speed ease-in-out;
