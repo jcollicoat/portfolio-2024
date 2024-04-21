@@ -9,7 +9,7 @@
 }
 
 body {
-    background-color: #000000;
+    background-color: #050505;
     color: #ffffff;
     font-family:
         'Inter',
@@ -30,6 +30,11 @@ body {
 header,
 main {
     margin: 0 auto;
+    width: 100%;
+}
+
+main {
+    padding: 15rem 0 10rem 0;
 }
 
 a,

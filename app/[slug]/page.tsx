@@ -1,10 +1,10 @@
 import { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import { client } from '@cms/client';
+import { ContentMapper } from '@cms/ContentMapper';
 import { meta } from '@cms/meta';
 import { page, pageMeta, pageSlugs } from '@cms/queries';
 import { PageData } from '@cms/types/pages';
-import { Header } from '@components/Header/Header';
 
 export async function generateStaticParams() {
     return await client.fetch(pageSlugs);
@@ -27,5 +27,5 @@ export default async function Page({ params }: { params: { slug: string } }) {
     }
     console.log(data);
 
-    return <Header />;
+    return <ContentMapper sections={data.content} />;
 }
