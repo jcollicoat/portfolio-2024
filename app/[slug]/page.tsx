@@ -1,7 +1,7 @@
 import { notFound } from 'next/navigation';
 import { client } from '@cms/client';
 import { page, slugs } from '@cms/queries';
-import { Page as PageType } from '@cms/types';
+import { PageData } from '@cms/types/pages';
 import { Header } from '@components/Header/Header';
 
 export async function generateStaticParams() {
@@ -10,7 +10,7 @@ export async function generateStaticParams() {
 }
 
 export default async function Page({ params }: { params: { slug: string } }) {
-    const data = await client.fetch<PageType>(page, {
+    const data = await client.fetch<PageData>(page, {
         slug: params.slug,
     });
     if (!data) {
