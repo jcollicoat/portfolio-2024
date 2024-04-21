@@ -55,16 +55,19 @@ export const Header: FC = () => {
                 </button>
                 <nav className={classNames(isMenuOpen && styles.menuIsOpen)}>
                     <div className={styles.wrapper}>
-                        <Link href="#projects-list">Code</Link>
+                        <Link href="/code">Code</Link>
                     </div>
                     <div className={styles.wrapper}>
-                        <Link href="#projects-list">Blog</Link>
+                        <Link href="/articles">Blog</Link>
                     </div>
                     <div className={styles.wrapper}>
-                        <Link href="#projects-list">Design</Link>
+                        <Link href="/design">Design</Link>
                     </div>
                     <div className={styles.wrapper}>
-                        <Link href="#projects-list">Contact</Link>
+                        <Link href="/about">About</Link>
+                    </div>
+                    <div className={styles.wrapper}>
+                        <Link href="#contact">Contact</Link>
                     </div>
                 </nav>
             </Grid>

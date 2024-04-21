@@ -78,19 +78,6 @@
         }
 
         .wrapper {
-            @keyframes appear {
-                from {
-                    opacity: 0;
-                    transform: translateY(1rem);
-                }
-                to {
-                    opacity: 1;
-                    transform: translateY(0);
-                }
-            }
-
-            animation: $transition appear 1s both;
-            animation-delay: 0.5s;
             margin: var(--padding-l) 0;
 
             @media (min-width: $breakpoint-m) {
