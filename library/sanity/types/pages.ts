@@ -1,6 +1,6 @@
 import { PageContent } from './sections';
 
-interface SEO {
+export interface SEO {
     meta_title: string;
     meta_description: string;
     meta_image: string;
@@ -14,7 +14,7 @@ interface Theme {
     };
 }
 
-interface Page extends SEO, Theme {
+interface Page extends Theme {
     content: PageContent[];
 }
 

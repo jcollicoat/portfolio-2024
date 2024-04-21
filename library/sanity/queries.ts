@@ -58,10 +58,13 @@ const page = `*[_type == "page" && slug.current == $slug][0] {
     }
 }`;
 
-const homepage = `*[_type == "page" && name == "Homepage"][0] {
+const homepageMeta = `*[_type == "page" && name == "Homepage"][0] {
     meta_title,
     meta_description,
     "meta_image": meta_image.asset->url,
+}`;
+
+const homepage = `*[_type == "page" && name == "Homepage"][0] {
     name,
     theme,
     custom_theme,
@@ -89,4 +92,4 @@ const homepage = `*[_type == "page" && name == "Homepage"][0] {
     }
 }`;
 
-export { slugs, page, homepage };
+export { slugs, page, homepageMeta, homepage };
