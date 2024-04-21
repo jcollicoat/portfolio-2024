@@ -1,5 +1,11 @@
-const slugs =
+const pageSlugs =
     '*[!(_id in path(\'drafts.**\')) && _type == "page" && name != "Homepage" && defined(slug.current)][].slug.current';
+
+const pageMeta = `*[_type == "page" && slug.current == $slug][0] {
+    meta_title,
+    meta_description,
+    "meta_image": meta_image.asset->url
+}`;
 
 const page = `*[_type == "page" && slug.current == $slug][0] {
     meta_title,
@@ -61,7 +67,7 @@ const page = `*[_type == "page" && slug.current == $slug][0] {
 const homepageMeta = `*[_type == "page" && name == "Homepage"][0] {
     meta_title,
     meta_description,
-    "meta_image": meta_image.asset->url,
+    "meta_image": meta_image.asset->url
 }`;
 
 const homepage = `*[_type == "page" && name == "Homepage"][0] {
@@ -92,4 +98,4 @@ const homepage = `*[_type == "page" && name == "Homepage"][0] {
     }
 }`;
 
-export { slugs, page, homepageMeta, homepage };
+export { pageSlugs, pageMeta, page, homepageMeta, homepage };

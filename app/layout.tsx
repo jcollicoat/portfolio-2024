@@ -1,10 +1,8 @@
 import type { Metadata } from 'next';
 import '@styles/layout.scss';
+import { DEFAULT_META } from '@cms/meta';
 
-export const metadata: Metadata = {
-    title: 'Joseph Collicoat',
-    description: 'Welcome to my portfolio, created with NextJS and Sanity CMS!',
-};
+export const metadata: Metadata = DEFAULT_META;
 
 export default function RootLayout({
     children,
