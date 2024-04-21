@@ -2,7 +2,7 @@
 
 .header {
     color: #ffffff;
-    padding: $padding-m 0;
+    padding: var(--padding-m) 0;
     position: fixed;
     top: 0;
     transition: $transition color;
@@ -91,10 +91,10 @@
 
             animation: $transition appear 1s both;
             animation-delay: 0.5s;
-            margin: $padding-l 0;
+            margin: var(--padding-l) 0;
 
             @media (min-width: 800px) {
-                margin: 0 0 0 $padding-l;
+                margin: 0 0 0 var(--padding-l);
             }
 
             a {

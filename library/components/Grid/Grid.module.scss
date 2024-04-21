@@ -6,7 +6,7 @@
     grid-template-columns: repeat(24, 1fr);
     margin: 0 auto;
     max-width: 1600px;
-    padding: 0 $padding-m;
+    padding: 0 var(--padding-m);
     width: 100%;
 
     &.isRelative {
