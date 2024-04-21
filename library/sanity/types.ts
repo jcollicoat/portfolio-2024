@@ -24,3 +24,7 @@ export interface Page {
 
     content: PageContent[];
 }
+
+export interface PageType {
+    page: Page | null;
+}
