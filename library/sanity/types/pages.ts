@@ -1,13 +1,4 @@
-type ContentTypes =
-    | 'about_me'
-    | 'articles'
-    | 'hero_home'
-    | 'hero_page'
-    | 'projects';
-
-interface PageContent {
-    _type: ContentTypes;
-}
+import { PageContent } from './sections';
 
 interface SEO {
     meta_title: string;
