@@ -1,10 +1,10 @@
 import { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import { client } from '@cms/client';
-import { ContentMapper } from '@cms/ContentMapper';
 import { meta } from '@cms/meta';
 import { page, pageMeta, pageSlugs } from '@cms/queries';
 import { PageData } from '@cms/types/pages';
+import { ContentMapper } from '@components/ContentMapper/ContentMapper';
 
 export async function generateStaticParams() {
     return await client.fetch(pageSlugs);

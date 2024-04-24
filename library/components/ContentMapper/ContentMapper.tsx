@@ -1,6 +1,6 @@
 import { ComponentProps, FC, useMemo } from 'react';
+import { PageContent } from '@cms/types/sections';
 import { HeroHome } from '@components/HeroHome/HeroHome';
-import { PageContent } from './types/sections';
 
 interface Props {
     sections?: PageContent[];
