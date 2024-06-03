@@ -1,0 +1,10 @@
+{
+    "recommendations": [
+        // Editing
+        "esbenp.prettier-vscode",
+        "dbaeumer.vscode-eslint",
+        // Themes
+        "eliverlara.andromeda",
+        "tal7aouy.icons"
+    ]
+}
